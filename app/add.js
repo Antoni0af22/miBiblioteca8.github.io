@@ -10,8 +10,7 @@ import { saveLibro } from './firebase.js'
    */
   
   const librosForm = document.getElementById("libros-form");
-  
-  const librosForm = document.getElementById("libros-form");
+
   try{
     librosForm.addEventListener('submit',(e)=>{
         e.preventDefault()
