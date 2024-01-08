@@ -11,18 +11,24 @@ import { saveLibro } from './firebase.js'
   
   const librosForm = document.getElementById("libros-form");
   
-  librosForm.addEventListener('submit',(e)=>{
-    e.preventDefault()
+  const librosForm = document.getElementById("libros-form");
+  try{
+    librosForm.addEventListener('submit',(e)=>{
+        e.preventDefault()
 
-    const titulo     = librosForm['libro-titulo']
-    const autor      = librosForm['libro-autor']
-    const editorial  = librosForm['libro-editorial']
-    const isbn       = librosForm['libro-isbn']
-    const fecha      = librosForm['libro-fecha']
+        const titulo     = librosForm['libro-titulo']
+        const autor      = librosForm['libro-autor']
+        const editorial  = librosForm['libro-editorial']
+        const isbn       = librosForm['libro-isbn']
+        const fecha      = librosForm['libro-fecha']
 
-    saveLibro(titulo.value, autor.value, editorial.value, isbn.value, fecha.value)
-  })
-
+        saveLibro(titulo.value, autor.value, editorial.value, isbn.value, fecha.value)
+        showMessage("El libro se guardo con exito");
+        console.log("El libro se guardo con exito")
+    })
+  }catch(error){
+    console.log(error)
+  }
   
 
 
