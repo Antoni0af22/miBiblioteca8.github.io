@@ -3,7 +3,12 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth
 import { getFirestore, addDoc, collection } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js"
 
 const firebaseConfig = {
-  // ...
+  apiKey: "AIzaSyDXJXd5N9wIqepiLGeOSRSVMK1nQS2PLC0",
+  authDomain: "mibiblioteca8-212a0.firebaseapp.com",
+  projectId: "mibiblioteca8-212a0",
+  storageBucket: "mibiblioteca8-212a0.appspot.com",
+  messagingSenderId: "48051035870",
+  appId: "1:48051035870:web:ff60a4acbc98f577ceec4f"
 };
 
 // Initialize Firebase
